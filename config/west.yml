@@ -27,6 +27,11 @@ manifest:
       remote: cormoran
       revision: main
       path: modules/zmk-module-battery-history
+      
+    - name: zmk-studio-messages
+      remote: cormoran
+      revision: main
+      path: modules/msgs/zmk-studio-messages
 
     - name: zmk-nice-oled
       remote: mctechnology17
