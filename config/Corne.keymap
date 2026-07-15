@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+        chosen {
+                zmk,physical-layout = &foostan_corne_6col_layout;
+        };
         keymap {
                 compatible = "zmk,keymap";
 
