@@ -4,6 +4,3 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
-    with:
-      # Hier übergeben wir den Suchpfad für die Protobuf-Dateien an das Build-System
-      extra-cmake-args: "-DNANOPB_IMPORT_DIRS=/tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk"
