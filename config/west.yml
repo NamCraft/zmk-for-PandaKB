@@ -18,11 +18,6 @@ manifest:
       revision: zmk-v0.3.0.0
       path: modules/zmk-module-settings-rpc
 
-    - name: zmk-module-battery-history
-      remote: cormoran
-      revision: main
-      path: modules/zmk-module-battery-history
-
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
