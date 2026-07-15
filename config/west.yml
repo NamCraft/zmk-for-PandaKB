@@ -4,13 +4,13 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: cormoran
       url-base: https://github.com/cormoran
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+    - name: namcraft
+      url-base: https://github.com/namcraft
 
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: main
       import: app/west.yml
 
     - name: zmk-module-ble-management
@@ -34,7 +34,7 @@ manifest:
       path: modules/msgs/zmk-studio-messages
 
     - name: zmk-nice-oled
-      remote: mctechnology17
+      remote: namcraft
       revision: main
       path: modules/zmk-nice-oled
 
