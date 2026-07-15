@@ -13,11 +13,6 @@ manifest:
       revision: v0.3-branch+custom-studio-protocol+activity
       import: app/west.yml
 
-    - name: zmk-module-ble-management
-      remote: cormoran
-      revision: studio-v0.3
-      path: modules/zmk-module-ble-management
-
     - name: zmk-module-settings-rpc
       remote: cormoran
       revision: zmk-v0.3.0.0
