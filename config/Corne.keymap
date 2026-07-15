@@ -3,10 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-// Workaround für LVGL 9 Kompatibilität in zmk-nice-oled
-#ifndef LV_IMG_CF_INDEXED_1BIT
-#define LV_IMG_CF_INDEXED_1BIT 0x07 // Entspricht dem neuen LV_COLOR_FORMAT_I1
-#endif
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
