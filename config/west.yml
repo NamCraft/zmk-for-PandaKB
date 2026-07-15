@@ -9,8 +9,8 @@ manifest:
 
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3.0
+      remote: cormoran
+      revision: v0.3-branch+custom-studio-protocol+activity
       import: app/west.yml
 
     - name: zmk-module-ble-management
@@ -25,7 +25,7 @@ manifest:
 
     - name: zmk-module-battery-history
       remote: cormoran
-      revision: zmk-v0.3.0.0
+      revision: main
       path: modules/zmk-module-battery-history
 
     - name: zmk-nice-oled
