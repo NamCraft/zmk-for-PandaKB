@@ -10,7 +10,7 @@
 
 / {
         chosen {
-                zmk,physical-layout = &foostan_corne_6col_layout;
+                zmk,physical-layout = &layout_corne_3x6_all;
         };
         keymap {
                 compatible = "zmk,keymap";
