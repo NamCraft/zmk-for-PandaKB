@@ -15,7 +15,7 @@ manifest:
 
     - name: zmk-module-ble-management
       remote: cormoran
-      revision: zmk-v0.3.0.0
+      revision: studio-v0.3.0
       path: modules/zmk-module-ble-management
 
     - name: zmk-module-settings-rpc
