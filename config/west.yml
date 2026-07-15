@@ -1,17 +1,30 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url_base: https://github.com/zmkfirmware
+    - name: cormoran
+      url_base: https://github.com/cormoran
     - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+      url_base: https://github.com/mctechnology17
 
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: main
       import: app/west.yml
 
-    # Das einzige Modul, das du für dein schickes OLED brauchst
+    - name: zmk-module-ble-management
+      remote: cormoran
+      revision: main
+
+    - name: zmk-module-settings-rpc
+      remote: cormoran
+      revision: main
+
+    - name: zmk-module-battery-history
+      remote: cormoran
+      revision: main
+
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
