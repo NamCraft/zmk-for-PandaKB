@@ -1,17 +1,17 @@
 # Diese Datei sagt dem ZMK-Standard-Workflow exakt, welche Firmwares er bauen soll
 include:
   # === Linke Hälfte mit OLED ===
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: Corne_L nice_oled
     snippet: studio-rpc-usb-uart
     artifact-name: Corne_left_oled
 
   # === Rechte Hälfte mit OLED ===
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: Corne_R nice_oled
     artifact-name: Corne_right_oled
 
   # === Reset-Firmware ===
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
     artifact-name: settings_reset
