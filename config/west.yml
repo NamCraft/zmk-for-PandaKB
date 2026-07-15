@@ -16,21 +16,22 @@ manifest:
     - name: zmk-module-ble-management
       remote: cormoran
       revision: main
-      import: true
+      path: modules/zmk-module-ble-management
 
     - name: zmk-module-settings-rpc
       remote: cormoran
       revision: main
-      import: true
+      path: modules/zmk-module-settings-rpc
 
     - name: zmk-module-battery-history
       remote: cormoran
       revision: main
-      import: true
-
+      path: modules/zmk-module-battery-history
+      
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
+      path: modules/zmk-nice-oled
 
   self:
     path: config
