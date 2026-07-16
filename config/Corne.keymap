@@ -13,16 +13,16 @@
         // Dieser Block steuert die LEDs je nach aktivem Layer
         led_layer_listener {
                 compatible = "zmk,behavior-listener";
-                device = <&rgb_ug; // Weist das Standard-LED-System an
-                layers = <0 1 2>;        // Lauscht auf Base (0), Low (1) und Top (2)
+                device = <&rgb_ug>; // Verweist direkt auf den RGB Underglow Treiber
+                layers = <0 1 2>;   // Lauscht auf Base (0), Low (1) und Top (2)
                 
                 bindings = <
-                        // Layer 0 (Base): Dein lila Standard-Farbton (Hue 290)
-                        &rgb_ug RGB_COLOR_HSB(290,100,60) 
-                        // Layer 1 (Low): Schaltet auf Rot
-                        &rgb_ug RGB_COLOR_HSB(0,100,60)   
-                        // Layer 2 (Top): Schaltet auf Blau
-                        &rgb_ug RGB_COLOR_HSB(240,100,60) 
+                        // Layer 0 (Base): Lila (Hue: 290, Saturation: 100, Brightness: 60)
+                        &rgb_ug RGB_HUD RGB_HUI(290) RGB_SAD RGB_SAI(100) RGB_BRD RGB_BRI(60)
+                        // Layer 1 (Low): Schaltet auf Rot (Hue: 0, Saturation: 100, Brightness: 60)
+                        &rgb_ug RGB_HUD RGB_HUI(0) RGB_SAD RGB_SAI(100) RGB_BRD RGB_BRI(60)   
+                        // Layer 2 (Top): Schaltet auf Blau (Hue: 240, Saturation: 100, Brightness: 60)
+                        &rgb_ug RGB_HUD RGB_HUI(240) RGB_SAD RGB_SAI(100) RGB_BRD RGB_BRI(60) 
                 >;
         };
 
