@@ -13,7 +13,7 @@
         // Dieser Block steuert die LEDs je nach aktivem Layer
         led_layer_listener {
                 compatible = "zmk,behavior-listener";
-                device = <&status_leds>; // Weist das Standard-LED-System an
+                device = <&rgb_ug; // Weist das Standard-LED-System an
                 layers = <0 1 2>;        // Lauscht auf Base (0), Low (1) und Top (2)
                 
                 bindings = <
